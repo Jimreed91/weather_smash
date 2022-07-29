@@ -1,5 +1,5 @@
 # weather_smash
-## Quick project to learn a bit of bash script 
+## Quick first time experimenting with bash scripting
 ## leverages https://home.openweathermap.org/ and https://ipinfo.io/ apis
 
 Weather smash is a little shell script to pull some details about the current weather quickly from the commandline. It also gives the
