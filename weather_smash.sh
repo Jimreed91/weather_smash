@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Put your https://openweathermap.org/ api key here
-API_KEY="98f450551b0485187fafcccee6b48754"
+API_KEY=
 
 #text
 red='\033[0;31m'
@@ -33,25 +33,22 @@ function bold_green {
 function temp_color {
   if [[ ${1} > 32 ]]
 then
-  echo e- ${red} ${1} ${clear}
+  echo ${red} ${1} ${clear}
 elif [[ ${1} > 27 ]]
 then
-  echo e- ${yellow} ${1} ${clear}
+  echo ${yellow} ${1} ${clear}
 elif [[ ${1} > 22 ]]
 then
-  echo e- ${green} ${1} ${clear}
+  echo ${green} ${1} ${clear}
 elif [[ ${1} > 17 ]]
 then
-  echo e- ${blue} ${1} ${clear}
+  echo ${blue} ${1} ${clear}
 elif [[ ${1} > 8 ]]
 then
-  echo e- ${cyan} ${1} ${clear}
+  echo ${cyan} ${1} ${clear}
 else
-  echo e-  ${1}
+  echo ${1}
 fi
-
-Copy
-
 }
 
 
@@ -85,21 +82,21 @@ seconds_to_sunset=$(expr "$sunset_time" - "$date_time" )
 time_to_sunset=$(date -d @"$seconds_to_sunset" -u +%H:%M:%S)
 
 #View
-echo -e ${bg_green}"==============================="${clear}
-echo "Welcome to weathersmash $user"
+
+echo "Starting Bash-Weather-Smash..."
+date -d @"$date_time"
+echo -e ${clear}"=========================================="${clear}
 sleep 1
 echo -e "Here is the current weather report for $(bold_green $location)"
 sleep 1
-date -d @"$date_time"
 sleep 1
-echo -e $(bold_green "===============================")
+echo -e $(bold_green "==========================================")
 echo "$(bold_green Conditions:) $description"
 sleep 1
-echo -e "$(bold_green Temperature:) $(temp_color ${temp})°C, $(bold_green Low:) $(temp_color ${min_temp})°C, $(bold_green High:) $(temp_color ${max_temp})°C"
+echo -e "$(bold_green Temperature:) $(temp_color ${temp})°C || $(bold_green Low:) $(temp_color ${min_temp})°C || $(bold_green High:) $(temp_color ${max_temp})°C"
 sleep 1
 echo "$(bold_green Humidity:) $humidity%"
-echo -e $(bold_green "===============================")
-
+echo -e $(bold_green "==========================================")
 sleep 1
-echo "Time until sunset (H/M/S): $time_to_sunset"
-echo -e ${bg_green}"==============================="${clear}
+echo "Time until sunset (H/M/S): $time_to_sunset "
+echo -e ${clear}"=========================================="${clear}
