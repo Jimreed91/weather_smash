@@ -85,19 +85,14 @@ time_to_sunset=$(date -d @"$seconds_to_sunset" -u +%H:%M:%S)
 #View
 
 echo "Starting Bash-Weather-Smash..."
+sleep 1
 date -d @"$date_time"
 echo -e ${clear}"=========================================="${clear}
-sleep 1
 echo -e "Here is the current weather report for $(bold_green $location)"
-sleep 1
-sleep 1
 echo -e $(bold_green "==========================================")
 echo "$(bold_green Conditions:) $description"
-sleep 1
 echo -e "$(bold_green Temperature:) $(temp_color ${temp})°C || $(bold_green Low:) $(temp_color ${min_temp})°C || $(bold_green High:) $(temp_color ${max_temp})°C"
-sleep 1
 echo "$(bold_green Humidity:) $humidity%"
 echo -e $(bold_green "==========================================")
-sleep 1
 echo "Time until sunset (H/M/S): $time_to_sunset "
 echo -e ${clear}"=========================================="${clear}
