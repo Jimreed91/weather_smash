@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Put your https://openweathermap.org/ api key here
-API_KEY=6245de93abf71f6848e9bab04b8ea1cb
+API_KEY=YOUR API KEY HERE
 
 
 #text
