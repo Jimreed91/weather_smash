@@ -26,3 +26,19 @@ chmod +rx weather_smash.sh
 ```
 ./weather_smash.sh
 ```
+
+## Alias
+If you really like it you can set up an alias, this is how it worked for me:
+Open up your aliases file to edit
+```
+nano ~/.aliases
+```
+and add a line equivelant to this with the path to your weather_smash.sh file...
+
+```
+alias weather='/home/james/.local/bin/weather_smash.sh'
+```
+save the file and now this should work from anywhere by calling 'weather' or whatever you choose
+
+![alt-text](https://github.com/Jimreed91/weather_smash/blob/7b670c4d7044b7d464aa19d1c51d946aa45d591b/demo_images/ALIAS.png)
+
