@@ -1,7 +1,8 @@
 #!/bin/bash
 
 #Put your https://openweathermap.org/ api key here
-API_KEY=
+API_KEY=6245de93abf71f6848e9bab04b8ea1cb
+
 
 #text
 red='\033[0;31m'
@@ -37,10 +38,10 @@ then
 elif [[ ${1} > 27 ]]
 then
   echo ${yellow} ${1} ${clear}
-elif [[ ${1} > 22 ]]
+elif [[ ${1} > 20 ]]
 then
   echo ${green} ${1} ${clear}
-elif [[ ${1} > 17 ]]
+elif [[ ${1} > 12 ]]
 then
   echo ${blue} ${1} ${clear}
 elif [[ ${1} > 8 ]]
