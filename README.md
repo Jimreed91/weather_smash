@@ -22,3 +22,7 @@ Then to give run permission
 chmod +rx weather_smash.sh
 ```
 ... and you should be good to give it a try
+
+```
+./weather_smash.sh
+```
