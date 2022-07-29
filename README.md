@@ -6,6 +6,8 @@ Weather smash is a little shell script to pull some details about the current we
 hours until sunset because a quick console reference for that is useful to me. The script will use an api to determine location via IP address
 automatically, but can also accept (city, country) as arguments if you want to override this or check the weather elsewhere.
 
+Be aware I'm running linux, not sure how well this will play on os but windows certainly wont be worth it unless youre already set up to run bash
+
 ## Standard auto function
 ![alt text here](https://github.com/Jimreed91/weather_smash/blob/6cbebf116daf96bda4f936207b84bc7c50a319b6/demo_images/auto_chiba.png)
 ## Overriding with arguments
